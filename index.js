@@ -4,11 +4,11 @@ const playOptions = ['rock', 'paper', 'scissors'];
 const resetGame = () => {
     // Reset images
     const rockImages = [...document.querySelectorAll('.rock')];
-    rockImages.forEach(element => element.src="/images/rock.png");
+    rockImages.forEach(element => element.src="images/rock.png");
     const paperImages = [...document.querySelectorAll('.paper')];
-    paperImages.forEach(element => element.src="/images/paper.png");
+    paperImages.forEach(element => element.src="images/paper.png");
     const scissorsImages = [...document.querySelectorAll('.scissors')];
-    scissorsImages.forEach(element => element.src="/images/scissors.png");
+    scissorsImages.forEach(element => element.src="images/scissors.png");
 
     // Reset game
     gamePlayed = false;
@@ -39,20 +39,20 @@ const playGame = () => {
         let countToUpdate;
         switch (winner) {
             case 1:
-                humanPlayImage.src=`/images/${humanPlay}-green.png`;
-                computerPlayImage.src=`/images/${computerPlay}-red.png`;
+                humanPlayImage.src=`images/${humanPlay}-green.png`;
+                computerPlayImage.src=`images/${computerPlay}-red.png`;
                 countToUpdate = document.querySelector('#human-wins');
                 countToUpdate.innerHTML = countToUpdate.innerHTML * 1 + 1;
                 break;
             case 2:
-                humanPlayImage.src=`/images/${humanPlay}-red.png`;
-                computerPlayImage.src=`/images/${computerPlay}-green.png`;
+                humanPlayImage.src=`images/${humanPlay}-red.png`;
+                computerPlayImage.src=`images/${computerPlay}-green.png`;
                 countToUpdate = document.querySelector('#computer-wins');
                 countToUpdate.innerHTML = countToUpdate.innerHTML * 1 + 1;
                 break;
             default:
-                humanPlayImage.src=`/images/${humanPlay}-yellow.png`;
-                computerPlayImage.src=`/images/${computerPlay}-yellow.png`;
+                humanPlayImage.src=`images/${humanPlay}-yellow.png`;
+                computerPlayImage.src=`images/${computerPlay}-yellow.png`;
                 countToUpdate = document.querySelector('#ties');
                 countToUpdate.innerHTML = countToUpdate.innerHTML * 1 + 1;
                 break;
