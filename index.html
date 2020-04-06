@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <h1>Rock, Paper, Scissors!</h1>
+        <p>Welcome to this simple Rock, Paper, Scissors game.</p>
+    </header>
+    <section>
+        <div>
+            <h2>You</h2>
+            <p>Please make your choice of rock, paper or scissors by clicking on the respective image.</p>
+        </div>
+        <div>
+            <h2>Computer</h2>
+            <p>Computer will make a selection after you do</p>
+        </div>
+    </section>
+    <section id="images-section">
+        <div>
+            <img class="rock clickable-img" id="rock" src="/images/rock.png" alt="">
+            <img class="paper clickable-img" id="paper" src="/images/paper.png" alt="">
+            <img class="scissors clickable-img" id="scissors" src="/images/scissors.png" alt="">
+        </div>
+        <div>
+            <img class="rock computer-img" id="rock-computer" src="/images/rock.png" alt="">
+            <img class="paper computer-img" id="paper-computer" src="/images/paper.png" alt="">
+            <img class="scissors computer-img" id="scissors-computer" src="/images/scissors.png" alt="">
+        </div>
+    </section>
+    <section id="button-section">
+        <button class="button">Reset Game</button>
+    </section>
+    <section id="stats">
+        <h2>Stats</h2>
+        <h3>Winned by you</h3>
+        <h3>Tied</h3>
+        <h3>Winned by computer</h3>
+        <p class="stat" id="human-wins">0</p>
+        <p class="stat" id="ties">0</p>
+        <p class="stat" id="computer-wins">0</p>
+    </section>
+    <section id="button-section">
+        <button class="button-stats">Reset Stats</button>
+    </section>
+</body>
+<script src="/index.js"></script>
+</html>
