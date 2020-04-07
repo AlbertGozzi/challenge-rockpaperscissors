@@ -34,7 +34,6 @@ const playGame = () => {
         // console.log(`Computer play: ${computerPlay}`);
         // console.log(`Winner: ${winner}`);
 
-
         // Update based on colors
         let countToUpdate;
         switch (winner) {
